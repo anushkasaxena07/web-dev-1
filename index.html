@@ -3,39 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XO Battle Arena</title>
-    <link rel="stylesheet" href="/style.css"> <!-- Linking the CSS file -->
+    <title>Music Library</title>
+    <link rel="stylesheet" href="/as1.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="side-image1.png" alt="Side Image 1"> <!-- Ensure you have the side-image1.png file -->
-            <div class="header-title">XO Battle Arena</div>
-            <img src="/logo.png.png" alt="Game Logo"> <!-- Ensure you have the logo.png file -->
-            <div class="header-title">XO Battle Arena</div>
-            <img src="side-image2.png" alt="Side Image 2"> <!-- Ensure you have the side-image2.png file -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Music Library</div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#featured">Featured Playlists</a></li>
+                <li><a href="#albums">Recommended Albums</a></li>
+                <li><a href="#reviews">User Reviews</a></li>
+                <li><a href="#footer">Footer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro" class="intro-section">
+        <div class="intro-text">
+            <h1>Welcome to Music Library</h1>
+            <p>Your ultimate music destination</p>
+            <a href="#featured" class="btn">Featured Playlists</a>
         </div>
-        <h2>Classic Tic Tac Toe Game</h2>
-        <div class="game-info">
-            <div id="player-turn">Player 1's Turn</div>
-            <button id="reset-button">Reset Game</button>
-            <button id="solo-mode">Play Solo</button>
-            <select id="board-size">
-                <option value="3">3x3</option>
-                <option value="4">4x4</option>
-                <option value="5">5x5</option>
-            </select>
+        <div class="intro-image">
+            <img src="/music.png" alt="Music">
         </div>
-        <div id="game-board" class="grid-3x3"></div>
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <p>Are you sure you want to reset the game?</p>
-                <button id="confirm-reset">Yes</button>
-                <button id="cancel-reset">No</button>
+    </section>
+
+    <section id="featured" class="featured-section">
+        <h2>Featured Playlists</h2>
+        <p>Check out our top playlists</p>
+        <div class="playlist-cards">
+            <div class="playlist-card">
+                <img src="/playlist.jpg" alt="Playlist 1">
+                <h3>Playlist 1</h3>
+                <p>A great mix of songs.</p>
+                <span class="song-count">10 Songs</span>
+            </div>
+            <!-- Add more playlist cards here -->
+        </div>
+    </section>
+
+    <section id="albums" class="albums-section">
+        <h2>Recommended Albums</h2>
+        <p>Find your next favorite album</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search albums...">
+        </div>
+        <div class="album-cards">
+            <div class="album-card">
+                <img src="/playlist.jpg" alt="Album 1">
+                <h3>Album 1</h3>
+                <p>Artist: Artist 1</p>
+                <p>Brief description of the album.</p>
+                <button class="btn-know-more">Know More</button>
+            </div>
+            <!-- Add more album cards here -->
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews-section">
+        <h2>User Reviews</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <img src="/Screenshot 2024-06-08 132604.png" alt="User 1">
+                <h3>User 1</h3>
+                <p>This is an amazing music library!</p>
+            </div>
+            <div class="review-card">
+                <img src="/Screenshot 2024-06-08 132611.png" alt="User 2">
+                <h3>User 2</h3>
+                <p>Great selection of music.</p>
             </div>
         </div>
-        
-    </div>
-    <script src="/script.js"></script> <!-- Linking the JavaScript file -->
+        <div class="review-form">
+            <h3>Submit your review</h3>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your review" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><img src="/Screenshot 2024-06-08 132751.png" alt="Facebook"></a>
+                
+                <a href="#"><img src="/Screenshot 2024-06-08 132757.png" alt="Instagram"></a>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.example.com/terms" target="_blank">Terms and Conditions</a>
+                <a href="https://www.example.com/privacy" target="_blank">Privacy Policy</a>
+            </div>
+            <button class="back-to-top">Back to Top</button>
+        </div>
+    </footer>
 </body>
 </html>
