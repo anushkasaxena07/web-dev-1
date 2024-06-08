@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a2cce;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+    }
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 20px;
+    background-color: #f4f4f4;
+}
+
+.intro-text {
+    max-width: 50%;
+}
+
+.intro-image img {
+    max-width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.intro-image img {
+    animation: bounce 2s infinite;
+}
+
+.featured-section {
+    padding: 50px 20px;
+    background-color: #02080f;
+    text-align: center;
+}
+
+.featured-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.featured-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.playlist-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.playlist-card {
+    position: relative;
+    background-color: white;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.playlist-card img {
+    width: 100%;
+}
+
+.song-count {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.albums-section {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.albums-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.albums-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.album-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.album-card {
+    background-color: white;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.album-card img {
+    width: 100%;
+}
+
+.album-card button {
+    display: none;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.album-card:hover {
+    transform: scale(1.05);
+}
+
+.album-card:hover button {
+   
